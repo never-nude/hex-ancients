@@ -1,0 +1,4 @@
+*.bak.*
+freezes/
+.DS_Store
+baseline/

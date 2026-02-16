@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hex Ancients</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">Hex Ancients</div>
+    <div class="build">BUILD <span id="buildId">loading…</span></div>
+  </header>
+
+  <main class="layout">
+    <section class="boardPane">
+      <div class="boardHeader">
+        <div class="truth">TRUTH PROBE: <span id="truthProbe">loading…</span></div>
+        <div class="hint">Click a hex to select it. (Milestone M0)</div>
+      </div>
+      <div id="board" class="board"></div>
+    </section>
+
+    <aside class="sidePane">
+      <h2>Status</h2>
+      <div class="statusRow"><span class="label">Selected:</span> <span id="selected">none</span></div>
+      <div class="statusRow"><span class="label">Hover:</span> <span id="hover">—</span></div>
+
+      <h2>Event log</h2>
+      <div id="log" class="log"></div>
+
+      <details class="debug">
+        <summary>Debug</summary>
+        <div class="debugRow"><span class="label">User agent:</span> <span id="ua"></span></div>
+      </details>
+    </aside>
+  </main>
+
+  <script src="build.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
